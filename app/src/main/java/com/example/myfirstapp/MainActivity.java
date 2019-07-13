@@ -8,7 +8,8 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.util.Log;
+import android.widget.EditText;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -19,6 +20,44 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+    }
+
+    private int[] onClick(View v){
+        EditText num1 = (EditText)findViewById(R.id.num1);
+        EditText num2 = (EditText)findViewById(R.id.num2);
+
+        int number1 = Integer.parseInt(num1.getText().toString());
+        int number2 = Integer.parseInt(num2.getText().toString());
+        int[] temp = {number1,number2};
+        return temp;
+    }
+
+    public void onClickAdd(View v){
+        int[] temp = onClick(v);
+        int ans = temp[0]+temp[1];
+        TextView answer = (TextView)findViewById(R.id.answer);
+        answer.setText(Integer.toString(ans));
+    }
+
+    public void onClickSub(View v){
+        int[] temp = onClick(v);
+        int ans = temp[0]-temp[1];
+        TextView answer = (TextView)findViewById(R.id.answer);
+        answer.setText(Integer.toString(ans));
+    }
+
+    public void onClickMul(View v){
+        int[] temp = onClick(v);
+        int ans = temp[0]*temp[1];
+        TextView answer = (TextView)findViewById(R.id.answer);
+        answer.setText(Integer.toString(ans));
+    }
+
+    public void onClickDiv(View v){
+        int[] temp = onClick(v);
+        int ans = temp[0]/temp[1];
+        TextView answer = (TextView)findViewById(R.id.answer);
+        answer.setText(Integer.toString(ans));
     }
 
 
