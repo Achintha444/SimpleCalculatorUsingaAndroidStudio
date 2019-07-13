@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#15BB96">
+
+        <TextView
+            android:id="@+id/answer"
+            android:layout_width="220dp"
+            android:layout_height="37dp"
+            android:textSize="24sp"
+            tools:layout_editor_absoluteX="168dp"
+            tools:layout_editor_absoluteY="493dp" />
+
+        <EditText
+            android:id="@+id/num2"
+            android:layout_width="370dp"
+            android:layout_height="48dp"
+            android:ems="10"
+            android:hint="Enter the second number"
+            android:inputType="number"
+            tools:layout_editor_absoluteX="20dp"
+            tools:layout_editor_absoluteY="382dp" />
+
+        <EditText
+            android:id="@+id/num1"
+            android:layout_width="370dp"
+            android:layout_height="48dp"
+            android:ems="10"
+            android:hint="Enter the firt number"
+            android:inputType="number"
+            tools:layout_editor_absoluteX="20dp"
+            tools:layout_editor_absoluteY="273dp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CALCULATOR"
+            android:textAllCaps="false"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="92dp"
+            tools:layout_editor_absoluteY="137dp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ANSWER : "
+            android:textSize="24sp"
+            tools:layout_editor_absoluteX="20dp"
+            tools:layout_editor_absoluteY="493dp" />
+
+        <Button
+            android:id="@+id/buttonDiv"
+            android:layout_width="66dp"
+            android:layout_height="44dp"
+            android:text="/"
+            tools:layout_editor_absoluteX="321dp"
+            tools:layout_editor_absoluteY="579dp" />
+
+        <Button
+            android:id="@+id/buttonSub"
+            android:layout_width="66dp"
+            android:layout_height="44dp"
+            android:text="-"
+            tools:layout_editor_absoluteX="127dp"
+            tools:layout_editor_absoluteY="579dp" />
+
+        <Button
+            android:id="@+id/buttonMul"
+            android:layout_width="66dp"
+            android:layout_height="44dp"
+            android:text="x"
+            tools:layout_editor_absoluteX="224dp"
+            tools:layout_editor_absoluteY="579dp" />
+
+        <Button
+            android:id="@+id/buttonAdd"
+            android:layout_width="66dp"
+            android:layout_height="44dp"
+            android:text="+"
+            tools:layout_editor_absoluteX="20dp"
+            tools:layout_editor_absoluteY="579dp" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+</android.support.design.widget.CoordinatorLayout>
